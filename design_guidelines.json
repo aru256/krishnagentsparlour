@@ -1,0 +1,100 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 5: Jewel & Luxury (Modern Dark Luxe)",
+  "design_philosophy": "A premium, cinematic, and masculine grooming experience. The design uses deep charcoal tones to create a moody, expensive atmosphere, punctuated by striking gold accents that draw the eye to interactive elements and key pricing. We avoid 'tech-bro' minimalism by incorporating texture, serif typography for authority, and generous, luxurious spacing.",
+  "colors": {
+    "background": {
+      "base": "#0a0a0a",
+      "surface": "#141414",
+      "surface_elevated": "#1f1f1f"
+    },
+    "primary": {
+      "DEFAULT": "#D4AF37",
+      "hover": "#C5A028",
+      "foreground": "#000000"
+    },
+    "text": {
+      "primary": "#FAFAFA",
+      "secondary": "#A1A1AA",
+      "muted": "#52525B"
+    },
+    "border": {
+      "subtle": "rgba(255, 255, 255, 0.08)",
+      "gold_subtle": "rgba(212, 175, 55, 0.2)"
+    },
+    "accent": {
+      "whatsapp": "#25D366",
+      "whatsapp_hover": "#20BD5A"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Playfair Display', serif",
+      "body": "'Outfit', sans-serif"
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl tracking-tight leading-none font-serif text-white",
+      "h2": "text-3xl md:text-4xl tracking-tight font-serif text-white",
+      "h3": "text-xl md:text-2xl font-serif text-white",
+      "body": "text-base leading-relaxed text-zinc-400 font-sans",
+      "small": "text-sm text-zinc-500 font-sans uppercase tracking-widest"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 md:py-32",
+    "container_max": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8",
+    "card_padding": "p-8 md:p-10"
+  },
+  "surfaces_and_borders": {
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border-b border-white/10",
+    "card_default": "bg-[#141414] border border-white/5 transition-colors duration-300",
+    "card_hover": "hover:border-[#D4AF37]/40 hover:bg-[#1a1a1a]",
+    "button_primary": "bg-[#D4AF37] text-black font-semibold tracking-wide uppercase text-sm px-8 py-4 hover:bg-[#C5A028] transition-all",
+    "button_outline": "border border-[#D4AF37] text-[#D4AF37] font-semibold tracking-wide uppercase text-sm px-8 py-4 hover:bg-[#D4AF37]/10 transition-all"
+  },
+  "components_instructions": {
+    "navbar": "Fixed, sticky to top. Uses glassmorphism (`backdrop-blur-xl bg-black/80`). 1px bottom border in `white/10`. Must have the brand name in Playfair Display and a 'Book Now' CTA linking to WhatsApp.",
+    "hero": "Minimum 90vh height. Use `pexels-18702143` as background with a `bg-black/60` overlay. H1 text centered or left-aligned with a massive Playfair Display font. Two buttons: 'Book via WhatsApp' (Primary) and 'Call Us' (Outline).",
+    "offers_banner": "A high-contrast strip placed just below the hero or pinned to the top. Use `bg-[#D4AF37] text-black` with bold text: '₹20 OFF YOUR FIRST VISIT — SHOW THIS AT THE COUNTER'.",
+    "services_grid": "Use Phosphor icons (Scissors, Razor, Drop, Sparkle). Dark cards (`#141414`) with 1px border. On hover, the border transitions to a subtle gold (`border-[#D4AF37]/40`).",
+    "pricing_menu": "Layout should resemble a high-end restaurant menu. Service name on the left, dotted line or space in the middle, price on the right. Group into categories: Hair, Beard, Face, Combos.",
+    "why_choose_us": "Grid layout highlighting key USPs: Premium Products, Experienced Barbers, Relaxing Ambience, Hygiene First. Use icons with a gold accent.",
+    "gallery": "A masonry or staggered grid using the curated unsplash/pexels photos. Give the images a subtle grayscale filter that turns to full color on hover.",
+    "testimonials": "Bento grid layout. Dark cards. Include the customer photo, a star rating (gold stars), and an authentic-sounding review.",
+    "location_and_hours": "Two-column layout. Left: Open hours table with 'Sunday Closed' highlighted. Right: Contact details (Phone, Address) and a dark-mode styled Google Map iframe (using CSS filter `invert(90%) hue-rotate(180deg)`).",
+    "floating_whatsapp": "Fixed bottom-right button with WhatsApp icon. `bg-[#25D366] hover:bg-[#20BD5A] text-white rounded-full p-4 shadow-lg z-50`. Links to `https://wa.me/919279857592?text=Hi%20Krishna%20Gents%20Parlour,%20I%20would%20like%20to%20book%20an%20appointment.`"
+  },
+  "media": {
+    "hero_background": "https://images.pexels.com/photos/18702143/pexels-photo-18702143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "gallery_photos": [
+      "https://images.unsplash.com/photo-1520338661084-680395057c93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxiYXJiZXIlMjBjdXR0aW5nJTIwaGFpciUyMGdyb29taW5nJTIwbWVufGVufDB8fHx8MTc3Nzc3ODY3NXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1672761431773-ae6e2d054493?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdCUyMGJlYXJkJTIwZ3Jvb21pbmd8ZW58MHx8fHwxNzc3Nzc4Njc1fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1651923099196-50b2b4d3c20e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxzdHJhaWdodCUyMHJhem9yJTIwc2Npc3NvcnMlMjBiYXJiZXIlMjB0b29sc3xlbnwwfHx8fDE3Nzc3Nzg2ODZ8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1768938896401-fe52fd18d3af?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBjdXR0aW5nJTIwaGFpciUyMGdyb29taW5nJTIwbWVufGVufDB8fHx8MTc3Nzc3ODY3NXww&ixlib=rb-4.1.0&q=85"
+    ],
+    "testimonial_faces": [
+      "https://images.unsplash.com/photo-1596633816484-10da10b748e4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYW4lMjBwb3J0cmFpdCUyMGZhY2V8ZW58MHx8fHwxNzc3Nzc4NjgyfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1628264045147-122484104d48?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBtYW4lMjBwb3J0cmFpdCUyMGZhY2V8ZW58MHx8fHwxNzc3Nzc4NjgyfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1624979215572-1230abc53d7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBtYW4lMjBwb3J0cmFpdCUyMGZhY2V8ZW58MHx8fHwxNzc3Nzc4NjgyfDA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "iconography": {
+    "library": "@phosphor-icons/react",
+    "weight": "light",
+    "installation": "yarn add @phosphor-icons/react"
+  },
+  "content_details": {
+    "business_name": "Krishna Gents Parlour",
+    "phone": "+91 92798 57592",
+    "address": "Ram Chand Kurjisar Road, Jasidih, Deoghar, Jharkhand 814142",
+    "hours": "Mon–Sat: 9 AM – 9 PM | Sunday: Closed"
+  },
+  "animations": {
+    "hover": "All interactive elements should subtly translate upwards (`-translate-y-1`) with a soft glow in gold on hover.",
+    "scroll": "Use `framer-motion` for staggered fade-up entry of sections."
+  },
+  "testing": {
+    "attributes": "Ensure all CTAs, navigation links, and service cards have a `data-testid` attribute (e.g., `data-testid='whatsapp-floating-button'`)."
+  }
+}
