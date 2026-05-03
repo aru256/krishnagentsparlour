@@ -1,0 +1,46 @@
+{
+  "summary": "Frontend-only testing of Krishna Gents Parlour landing page. All 14 requested feature checks passed. Landing page loads at https://barber-krishna-1.preview.emergentagent.com with zero console errors. All WhatsApp and tel links are correct, all sections render with expected counts, smooth scroll works, mobile menu toggles correctly.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "site.js is clean; phone constants centralized. No duplication.",
+    "Landing.jsx composition is clean and minimal.",
+    "All interactive elements have data-testid attributes as per spec.",
+    "No backend calls made from frontend - correctly matches the pure marketing landing page spec."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "test_credentials": "N/A - no auth on this page",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Frontend-only landing page with no backend integration. All data-testids confirmed working: hero-section, hero-whatsapp-btn, hero-call-btn, offers-banner, service-card-0..5 (6), pricing-group-0..3 (4), gallery-img-0..5 (6), testimonial-0..2 (3), visit-section, visit-map, directions-btn, whatsapp-floating-button, navbar-book-btn, footer-book-btn, nav-services/pricing/gallery/reviews/visit, navbar-menu-toggle, navbar-mobile-menu. All wa.me links use 919279857592 and all tel: links use +919279857592. Sunday Closed row present in Visit section.",
+  "detailed_check_results": {
+    "landing_page_loads": "PASS - 0 console errors",
+    "navbar_brand_and_5_nav_links": "PASS",
+    "navbar_book_now_wa_link": "PASS - https://wa.me/919279857592?text=... target=_blank",
+    "navbar_call_btn": "PASS",
+    "mobile_menu_open_close": "PASS on 390x844 viewport",
+    "hero_heading_and_buttons": "PASS - hero-whatsapp-btn -> wa.me/919279857592, hero-call-btn -> tel:+919279857592",
+    "offers_banner_20_off": "PASS - contains ₹20",
+    "services_6_cards": "PASS - 6 cards",
+    "pricing_4_groups": "PASS - 4 groups (Hair, Beard & Shave, Face & Skin, Combos)",
+    "gallery_6_images": "PASS - 6 images",
+    "testimonials_3_cards": "PASS - 3 cards",
+    "visit_section": "PASS - visit-section, visit-map iframe, directions-btn all visible; 'Sunday' and 'Closed' text present",
+    "footer_book_btn": "PASS - correct wa.me link",
+    "floating_whatsapp_button": "PASS - visible bottom-left, correct wa.me link, target=_blank",
+    "all_wa_links_correct_number": "PASS - 0 bad wa.me links found",
+    "all_tel_links_correct": "PASS - 0 bad tel links found",
+    "smooth_scroll_nav": "PASS - clicking nav-pricing scrolled pricing-section into viewport"
+  }
+}
