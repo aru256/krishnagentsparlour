@@ -48,10 +48,10 @@ export default function Footer() {
           <div className="text-[10px] uppercase tracking-[0.32em] text-[#D4AF37] mb-5">
             Hours
           </div>
-          <p className="text-zinc-300 text-sm">Mon – Sat</p>
+          <p className="text-zinc-300 text-sm">Mon–Wed, Fri–Sun</p>
           <p className="text-zinc-500 text-sm">9:00 AM – 9:00 PM</p>
           <p className="mt-3 text-[#D4AF37] uppercase text-xs tracking-widest">
-            Sunday Closed
+            Thursday Closed
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4 text-xs text-zinc-600">
         <p>© {new Date().getFullYear()} Krishna Gents Parlour. All rights reserved.</p>
         <p className="font-serif-display tracking-wider">
-          Crafted with care · Jasidih, Jharkhand
+          Crafted with care by Devz Corner Inc. · Jasidih, Jharkhand
         </p>
       </div>
     </footer>

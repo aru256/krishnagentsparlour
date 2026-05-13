@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Navigation } from "lucide-react";
+import { MapPin, Phone, Clock, Navigation, Star, Info as InfoIcon, ExternalLink, CornerUpRight } from "lucide-react";
 import {
   ADDRESS,
   PHONE_DISPLAY,
@@ -12,10 +12,10 @@ const HOURS = [
   ["Monday", "9:00 AM – 9:00 PM"],
   ["Tuesday", "9:00 AM – 9:00 PM"],
   ["Wednesday", "9:00 AM – 9:00 PM"],
-  ["Thursday", "9:00 AM – 9:00 PM"],
+  ["Thursday", "Closed"],
   ["Friday", "9:00 AM – 9:00 PM"],
   ["Saturday", "9:00 AM – 9:00 PM"],
-  ["Sunday", "Closed"],
+  ["Sunday", "9:00 AM – 9:00 PM"],
 ];
 
 export default function Visit() {
@@ -64,8 +64,8 @@ export default function Visit() {
             <Info
               icon={Clock}
               label="Hours"
-              value="Mon–Sat · 9:00 AM – 9:00 PM"
-              extra="Sunday Closed"
+              value="Mon–Wed, Fri–Sun · 9:00 AM – 9:00 PM"
+              extra="Thursday Closed"
             />
           </div>
 
@@ -126,12 +126,28 @@ export default function Visit() {
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
-            <div className="absolute top-4 left-4 right-4 md:right-auto bg-black/85 backdrop-blur border border-[#D4AF37]/30 px-5 py-4 max-w-sm">
-              <div className="text-[10px] uppercase tracking-[0.28em] text-[#D4AF37] mb-2">
-                Plus Code
+            <div className="absolute top-4 left-4 bg-black/90 backdrop-blur border border-white/10 px-5 py-4 min-w-[280px]">
+              <div className="flex justify-between items-start mb-2">
+                <div className="text-[10px] uppercase tracking-[0.28em] text-[#D4AF37]">
+                  Plus Code
+                </div>
+                <div className="flex gap-2">
+                  <a href={MAPS_LINK} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors text-zinc-400 hover:text-white">
+                    <ExternalLink size={14} />
+                  </a>
+                  <a href={MAPS_LINK} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors text-zinc-400 hover:text-white">
+                    <CornerUpRight size={14} />
+                  </a>
+                </div>
               </div>
-              <div className="font-serif-display text-white text-lg">
+              <div className="font-serif-display text-white text-lg mb-3">
                 GM62+RMW · Jasidih
+              </div>
+              <div className="flex items-center gap-1.5 text-sm text-zinc-400 border-t border-white/10 pt-3">
+                <span>4.7</span>
+                <Star size={12} className="text-[#D4AF37] fill-[#D4AF37]" />
+                <span className="underline underline-offset-2 hover:text-white cursor-pointer transition-colors">(84)</span>
+                <InfoIcon size={14} className="ml-1 opacity-70" />
               </div>
             </div>
           </div>

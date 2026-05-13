@@ -71,9 +71,9 @@ export default function Hero() {
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-6 max-w-md border-t border-white/10 pt-6">
-            <Stat label="Years Serving" value="10+" />
-            <Stat label="Happy Clients" value="60+" />
-            <Stat label="Google Rating" value="4.5★" />
+            <Stat label="Years Serving" value="15+" />
+            <Stat label="Happy Clients" value="80+" />
+            <Stat label="Google Rating" value="4.7★" />
           </div>
         </div>
       </div>

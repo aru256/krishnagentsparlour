@@ -3,40 +3,82 @@ import { waLink } from "@/lib/site";
 
 const MENU = [
   {
-    category: "Hair",
+    category: "Shaving",
     items: [
-      { name: "Classic Haircut", price: "₹80" },
-      { name: "Signature Style Cut", price: "₹120" },
-      { name: "Premium Stylist Cut", price: "₹150" },
-      { name: "Hair Wash & Blow-Dry", price: "₹100" },
-      { name: "Hair Colour (Touch-up)", price: "₹350+" },
+      { name: "Gillette Foam", price: "₹99" },
+      { name: "Shahnaz Cream", price: "₹99" },
+      { name: "Trimming & Setting", price: "₹99" },
     ],
   },
   {
-    category: "Beard & Shave",
+    category: "Hair Cut",
     items: [
-      { name: "Clean Shave (Hot Towel)", price: "₹80" },
-      { name: "Beard Trim & Shape", price: "₹60" },
-      { name: "Beard Sculpting + Oil", price: "₹100" },
-      { name: "Moustache Styling", price: "₹40" },
+      { name: "Normal Cut", price: "₹99" },
+      { name: "Low Fade", price: "₹99" },
+      { name: "High Fade", price: "₹199" },
+      { name: "Taper Fade", price: "₹199" },
     ],
   },
   {
-    category: "Face & Skin",
+    category: "Face Massage",
     items: [
-      { name: "Express Cleanup", price: "₹200" },
-      { name: "Signature Facial", price: "₹350" },
-      { name: "Premium Glow Facial", price: "₹500" },
-      { name: "De-Tan Treatment", price: "₹400" },
+      { name: "Shahnaz", price: "₹399" },
+      { name: "Nature's", price: "₹399" },
+      { name: "Shahnaz Gold", price: "₹499" },
+      { name: "Lotus", price: "₹499" },
     ],
   },
   {
-    category: "Combos",
+    category: "Scrub",
     items: [
-      { name: "Haircut + Beard", price: "₹180" },
-      { name: "Haircut + Beard + Cleanup", price: "₹400" },
-      { name: "Wedding / Occasion Package", price: "₹800" },
-      { name: "Head Massage Add-on", price: "₹100" },
+      { name: "Shahnaz", price: "₹399" },
+      { name: "Nature's", price: "₹399" },
+      { name: "Lotus", price: "₹399" },
+      { name: "Everyuth", price: "₹199" },
+      { name: "Gold", price: "₹499" },
+      { name: "Diamond", price: "₹699" },
+    ],
+  },
+  {
+    category: "Hair Treatment",
+    items: [
+      { name: "Loreal Wash Shampoo", price: "₹199" },
+      { name: "Tresemme Wash Shampoo", price: "₹99" },
+      { name: "Hair Spa Loreal", price: "₹599" },
+      { name: "Hair Serum", price: "₹99" },
+      { name: "Hair Spray", price: "₹99" },
+    ],
+  },
+  {
+    category: "Facial",
+    items: [
+      { name: "Shahnaz", price: "₹1349" },
+      { name: "Shahnaz Gold", price: "₹1449" },
+      { name: "Shahnaz Diamond", price: "₹1699" },
+      { name: "O3+ Brighte Skin", price: "₹1399" },
+      { name: "O3+", price: "₹2499" },
+      { name: "Olivia Diamond", price: "₹1999" },
+    ],
+  },
+  {
+    category: "Piercing",
+    items: [
+      { name: "One Ear", price: "₹199" },
+      { name: "Two Ear", price: "₹299" },
+      { name: "Nose", price: "₹199" },
+      { name: "One Middle Ear", price: "₹199" },
+      { name: "Two Middle Ear", price: "₹299" },
+      { name: "One Down & Middle", price: "₹299" },
+      { name: "Two Down & Middle", price: "₹399" },
+    ],
+  },
+  {
+    category: "Face Bleach",
+    items: [
+      { name: "OXY Men", price: "₹499" },
+      { name: "OXY Life", price: "₹399" },
+      { name: "D tan O3+", price: "₹499" },
+      { name: "D tan Raga", price: "₹399" },
     ],
   },
 ];

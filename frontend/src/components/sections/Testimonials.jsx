@@ -52,10 +52,10 @@ export default function Testimonials() {
               </div>
               <div>
                 <div className="font-serif-display text-xl text-white leading-none">
-                  4.5 / 5
+                  4.7 / 5
                 </div>
                 <div className="text-[10px] uppercase tracking-[0.28em] text-zinc-500 mt-1">
-                  60+ Google Reviews
+                  80+ Google Reviews
                 </div>
               </div>
             </div>
