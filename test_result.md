@@ -101,3 +101,53 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+## user_problem_statement: Test the full web app
+## backend:
+  - task: "FastAPI status API (/api/, /api/status)"
+    implemented: true
+    working: "NA"
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+        - agent: "main"
+        - comment: "Not used by landing page (PRD: frontend-only, WhatsApp CTAs). No backend/.env locally — not started."
+## frontend:
+  - task: "Production build"
+    implemented: true
+    working: true
+    file: "frontend/"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+        - agent: "main"
+        - comment: "npm run build — compiled successfully May 2026"
+  - task: "Landing page E2E (14 checks)"
+    implemented: true
+    working: true
+    file: "e2e/landing.spec.mjs"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+        - agent: "main"
+        - comment: "Playwright 14/14 pass vs http://localhost:3000 (serve build). See test_reports/iteration_2.json"
+## metadata:
+  created_by: "main_agent"
+  version: "1.1"
+  test_sequence: 2
+  run_ui: true
+## test_plan:
+  current_focus: []
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+## agent_communication:
+    - agent: "main"
+    - message: "Full test May 2026: build OK, 14/14 E2E pass. Backend scaffold skipped (no env, not wired to UI)."

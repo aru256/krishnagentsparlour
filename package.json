@@ -1,0 +1,20 @@
+{
+  "name": "krishnagentsparlour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:e2e": "playwright test",
+    "build:frontend": "npm run build --prefix frontend",
+    "serve:frontend": "npm run build --prefix frontend && npx --yes serve -s frontend/build -l 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1"
+  }
+}
