@@ -74,7 +74,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4 text-xs text-zinc-600">
         <p>© {new Date().getFullYear()} Krishna Gents Parlour. All rights reserved.</p>
         <p className="font-serif-display tracking-wider">
-          Crafted with care by Devz Corner Inc. · Jasidih, Jharkhand
+          Crafted with care by Devz Corner Inc. · Created by Ishu Kumar and Aryan Raj · Jasidih, Jharkhand
         </p>
       </div>
     </footer>
