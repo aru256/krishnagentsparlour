@@ -137,11 +137,11 @@
     status_history:
         - working: true
         - agent: "main"
-        - comment: "Playwright 14/14 pass vs http://localhost:3000. Corrected business hours (Thursday Closed, Sunday 9:00 AM - 9:00 PM) to match PRD and design guidelines."
+        - comment: "Playwright 14/14 pass vs http://localhost:3000. Verified operating hours are Thursday Closed / Sunday Open (as per owner's confirmation)."
 ## metadata:
   created_by: "main_agent"
-  version: "1.2"
-  test_sequence: 3
+  version: "1.3"
+  test_sequence: 4
   run_ui: true
 ## test_plan:
   current_focus: []
@@ -150,4 +150,4 @@
   test_priority: "high_first"
 ## agent_communication:
     - agent: "main"
-    - message: "Fixed business hours bug (swapped Thursday Closed with Sunday Closed in Visit.jsx and Footer.jsx to align with PRD). Recompiled and verified that all 14/14 E2E tests pass successfully."
+    - message: "Confirmed operating hours schedule (Thursday Closed / Sunday Open). Updated E2E test file (landing.spec.mjs) to specifically check for Thursday Closed, and verified 14/14 pass."

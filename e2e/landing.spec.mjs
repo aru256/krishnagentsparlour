@@ -88,12 +88,12 @@ test.describe("Krishna Gents Parlour landing page", () => {
     }
   });
 
-  test("visit section with map and Sunday closed", async ({ page }) => {
+  test("visit section with map and Thursday closed", async ({ page }) => {
     await expect(page.getByTestId("visit-section")).toBeVisible();
     await expect(page.getByTestId("visit-map")).toBeVisible();
     await expect(page.getByTestId("directions-btn")).toBeVisible();
     const visit = page.getByTestId("visit-section");
-    await expect(visit).toContainText("Sunday");
+    await expect(visit).toContainText("Thursday");
     await expect(visit).toContainText("Closed");
   });
 
