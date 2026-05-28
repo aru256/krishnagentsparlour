@@ -137,11 +137,11 @@
     status_history:
         - working: true
         - agent: "main"
-        - comment: "Playwright 14/14 pass vs http://localhost:3000 (serve build). See test_reports/iteration_2.json"
+        - comment: "Playwright 14/14 pass vs http://localhost:3000. Corrected business hours (Thursday Closed, Sunday 9:00 AM - 9:00 PM) to match PRD and design guidelines."
 ## metadata:
   created_by: "main_agent"
-  version: "1.1"
-  test_sequence: 2
+  version: "1.2"
+  test_sequence: 3
   run_ui: true
 ## test_plan:
   current_focus: []
@@ -150,4 +150,4 @@
   test_priority: "high_first"
 ## agent_communication:
     - agent: "main"
-    - message: "Full test May 2026: build OK, 14/14 E2E pass. Backend scaffold skipped (no env, not wired to UI)."
+    - message: "Fixed business hours bug (swapped Thursday Closed with Sunday Closed in Visit.jsx and Footer.jsx to align with PRD). Recompiled and verified that all 14/14 E2E tests pass successfully."
