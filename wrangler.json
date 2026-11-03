@@ -2,7 +2,7 @@
   "name": "krishnagentsparlour",
   "compatibility_date": "2024-09-23",
   "build": {
-    "command": "npm --prefix frontend install && npm --prefix frontend run build"
+    "command": "cd frontend && npm install --legacy-peer-deps && npm run build"
   },
   "assets": {
     "directory": "./frontend/build",
