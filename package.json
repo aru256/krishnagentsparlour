@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
     "test:e2e": "playwright test",
     "build:frontend": "npm run build --prefix frontend",
     "serve:frontend": "npm run build --prefix frontend && npx --yes serve -s frontend/build -l 3000"
